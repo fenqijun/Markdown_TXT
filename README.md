@@ -1,5 +1,6 @@
 # Markdown_TXT
 点击复制文本，按下“清除格式”自动清除MarkDown格式，删除文本中的*#-等符号，转换为纯文本。
+复制文本——点击清除格式，插件会自动替换剪贴板内容。
 适用于AI生成的文本内容，支持主流AI大模型网站。
 示例：
 ![b3c654e02cf19ca4fe1bbe21fb02ac2](https://github.com/user-attachments/assets/1feb3578-648b-4266-bd64-75112930ffe5)
