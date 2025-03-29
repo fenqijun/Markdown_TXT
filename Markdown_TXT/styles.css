@@ -1,0 +1,33 @@
+#md-to-text-btn {
+    position: fixed;
+    bottom: 140px;  /* 从 20px 改为 40px，向上移动 */
+    right: 15px;
+    padding: 8px 16px;  /* 减小内边距（原为 12px 24px） */
+    background: linear-gradient(135deg, #6e8efb, #4a6cf7);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;  /* 字体缩小（原为 14px） */
+    font-weight: 500;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#md-to-text-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #4a6cf7, #6e8efb);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#md-to-text-btn:disabled {
+    background: #e0e0e0;
+    color: #9e9e9e;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+#md-to-text-btn:active:not(:disabled) {
+    transform: scale(0.98);
+}

@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "清除Markdown格式",
+    "version": "2.0",
+    "description": "点击复制文本，按下“清除格式”自动清除MarkDown格式，删除文本中的*#-等符号，转换为纯文本.适用于ai生成的文本内容",
+    "permissions": ["clipboardRead", "clipboardWrite"],
+    "content_scripts": [
+      {
+        "matches": [
+          "*://chatgpt.com/*",
+          "*://claude.ai/*",
+          "*://www.coze.com/*",
+          "*://www.kimi.ai/*",
+          "*://kimi.moonshot.cn/*",
+          "*://www.doubao.com/*",
+          "*://yuanbao.tencent.com/*",
+          "*://yiyan.baidu.com/*",
+          "*://tongyi.aliyun.com/*",
+          "*://xinghuo.xfyun.cn/*",
+          "*://chat.deepseek.com/*",
+          "*://www.moonshot.cn/*",
+          "*://poe.com/*",
+          "*://chatglm.cn/*",
+          "*://gemini.google.com/*",
+          "*://metaso.cn/*",
+          "*://coze.cn/*",
+          "*://ibiling.cn/*",
+          "*://gw.iflydocs.com/*",
+          "*://x.ai/grok/*",
+          "*://www.tiangong.cn/*",
+          "*://xiaoyi.huawei.com/*",
+          "*://www.aigc.cn/*",
+          "*://wenku.baidu.com/*"
+        ],
+        "js": ["content.js"],
+        "css": ["styles.css"],
+        "run_at": "document_end"
+      }
+    ]
+  }
